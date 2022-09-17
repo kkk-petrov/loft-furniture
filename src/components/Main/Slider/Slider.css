@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+.slider{
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    background: url(../../../images/hero.png) center 100% no-repeat;
+    padding: 0px;
+    position: relative;
+    color: #3C3C3C;
+
+}
+
+.slider__content{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    /* padding: 100px 0px 0px 100px; */
+    /* margin: 120px 100px; */
+    
+}
+
+.slider__controls{
+    position: absolute;
+    top: 50%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.slider__controls-item{
+    border: none;
+    background: none;
+}
+
+.slider__controls-item path{
+    transition: all .2s ease-in-out;
+}
+
+.slider__controls-prev path{
+    fill: #9D9D9D;
+
+}
+
+.slider__controls-item svg:hover path,
+.slider__controls-item:hover{
+    fill: #474747;
+    cursor: pointer;
+}
+
+.slider__controls-prev{
+    transform: scaleX(-1) translateY(-50%);
+}
+
+.slider__controls-next{
+    transform: scaleX(1) translateY(-50%);
+}
+
+.slider__title{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 0px 0px 15px 0px;
+    text-transform: uppercase;
+    line-height: 50px;
+
+    width: 100%;
+}
+
+.slider__subtitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+    font-weight: 400;
+    line-height: 22px;
+
+    width: 100%;
+
+}
+
+.slider__button{
+    padding: 14px 25px;
+    background-color: #fff;
+    color: #3C3C3C;
+    text-decoration: none;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.027);
+    max-width: 165px;
+    font-weight: 700;
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.slider__button:hover{
+    background-color: #474747;
+    color:#fff;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.472);
+}

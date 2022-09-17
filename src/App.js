@@ -1,20 +1,15 @@
 import './App.css';
 
 import Header from './components/Header/Header.jsx';
-import CategoryList from './components/Main/Categories/CategoryList.jsx';
+import Main from './components/Main/Main.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <main className="main">
-        <div className="main__container container">
-          <CategoryList />
-        </div>
-      </main>
-      <footer className="footer">
-        <div className="footer__container container"></div>
-      </footer>
+      <Main />
+      <Footer />
     </div>
   );
 }

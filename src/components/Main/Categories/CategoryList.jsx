@@ -14,21 +14,23 @@ const CategoryList = () => {
           {
             icon: icons.kitchenIcon,
             title: 'Кухни',
-            // dropdown: ['Кухни111', 'ASDFG', '2345'],
           },
-          { icon: icons.livingroomIcon, title: 'Гостинные' },
-          { icon: icons.bedroomIcon, title: 'Спальни' },
+          {
+            icon: icons.livingroomIcon,
+            title: 'Гостинные',
+            dropdownItems: ['1cdsfghg', '21cdsfghg', '31cdsfghg', '41cdsfghg', '51cdsfghg'],
+          },
+          {
+            icon: icons.bedroomIcon,
+            title: 'Спальни',
+            dropdownItems: ['qqwer', 'qewrt', 'qerte', 'xzcfg'],
+          },
           { icon: icons.officeIcon, title: 'Офисная мебель' },
-          { icon: icons.childrensroomIcon, title: 'Детская' },
+          { icon: icons.childrensroomIcon, title: 'Детская', dropdownItems: ['12345678', 'ddddd'] },
           { title: 'Акция', color: 'red' },
-          { title: '', color: 'menu' },
+          { color: 'menu' },
         ]}
       />
-      {/* <Category {{ icon: icons.livingroomIcon, title: 'Гостинные' }} />
-      <Category {{ icon: icons.bedroomIcon, title: 'Спальни' }} />
-      <Category {{ icon: icons.officeIcon, title: 'Офисная мебель' }} />
-      <Category {{ icon: icons.childrensroomIcon, title: 'Детская' }} />
-      <Category {{ icon: icons.closetIcon, title: 'Прихожие' }} /> */}
     </ul>
   );
 };

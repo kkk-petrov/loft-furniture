@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     position: relative;
     color: #414141;
     font-size: 16px;
@@ -22,11 +23,12 @@
     height: 100%;
     width: 100%;
     padding: 0px 40px;
-    transition: all .1s ease;
+    transition: all .2s ease;
 }
 
 .category__list-item:hover{
-    background-color: #245462;
+    background-color: #3a3a3a;
+    /* background-color: #245462; */
     color: #fff;
     cursor: pointer;
 
@@ -34,6 +36,56 @@
 
 .category__list-item:hover .category__icon path{
     fill: #fff;
+}
+.category__list-item .red,
+.category__list-item .menu{
+    padding: 0px;
+}
+
+
+.red{
+    transition: all .1s ease;
+    color: #D74444;
+}
+
+/* .category__list-item:hover .red{
+    color: #fff;
+} */
+
+.menu{
+    position: relative;
+}
+
+.menu,
+.menu::before,
+.menu::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #202020;
+    transition: all .2s ease;
+
+}
+
+.menu::before,
+.menu::after{
+    position: absolute;
+}
+
+.menu::before{
+    top: -6px;
+}
+
+.menu::after{
+    bottom: -6px;
+}
+
+.category__list-item:hover .menu,
+.category__list-item:hover .menu::before,
+.category__list-item:hover .menu::after{
+    background-color: #fff;
 }
 
 .category__icon {
@@ -66,3 +118,4 @@
     color: #245462;
     text-decoration: none;
 }
+

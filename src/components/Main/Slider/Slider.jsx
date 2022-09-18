@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Slider.css';
+import image from '../../../images/hero.png';
 
 const sliderControl = (
   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,6 +17,8 @@ const sliderControl = (
 const Slider = () => {
   return (
     <section className="slider">
+      <img src={image} alt="" className="slider__image" />
+
       <div className="slider__content">
         <h1 className="slider__title">Loft Мебель</h1>
         <p className="slider__subtitle">Современная и удобная мебель</p>

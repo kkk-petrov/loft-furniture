@@ -55,11 +55,11 @@ ul{
 }
 
 .phone{
-    background: url(../../images/icons/phone-icon.svg) center/cover no-repeat;
+    background: url(../../assets/images/icons/phone-icon.svg) center/cover no-repeat;
 }
 
 .delivery{
-    background: url(../../images/icons/delivery-icon.svg) center/cover no-repeat;
+    background: url(../../assets/images/icons/delivery-icon.svg) center/cover no-repeat;
     width: 30px;
 }
 
@@ -89,7 +89,7 @@ ul{
 
 
 .header__search::before{
-    content: url('../../images/icons/search-icon.svg');
+    content: url('../../assets/images/icons/search-icon.svg');
     display: block;
     position: absolute;
     width: 16px;
@@ -147,13 +147,13 @@ ul{
 }
 
 .wishlist{
-    background: url(../../images/icons/wishlist-icon.svg) center/cover no-repeat;
+    background: url(../../assets/images/icons/wishlist-icon.svg) center/cover no-repeat;
     width: 20px;
 
 }
 
 .bag{
-    background: url(../../images/icons/bag-icon.svg) center/cover no-repeat;
+    background: url(../../assets/images/icons/bag-icon.svg) center/cover no-repeat;
     width: 15px;
     position: relative;
 
@@ -172,6 +172,6 @@ ul{
 }
 
 .profile{
-    background: url(../../images/icons/profile-icon.svg) center/cover no-repeat;
+    background: url(../../assets/images/icons/profile-icon.svg) center/cover no-repeat;
     width: 13px;
 }

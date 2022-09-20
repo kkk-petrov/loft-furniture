@@ -1,38 +1,39 @@
 import React from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import './Slider.css';
 
-import slide1 from '../../../assets/images/slide1.png';
-import slide2 from '../../../assets/images/slide2.png';
-import slide3 from '../../../assets/images/slide3.png';
+import slide1 from '../../assets/images/slides/slide1.png';
+import slide2 from '../../assets/images/slides/slide2.png';
+import slide3 from '../../assets/images/slides/slide3.png';
+
+const slides = [slide1, slide2, slide3];
 
 const Slider = () => {
   return (
     <section className="slider">
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay]}
+        pagination={{
+          clickable: true,
+        }}
         navigation
         loop
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 10000 }}
         className="swiper">
-        <SwiperSlide>
-          <img src={slide1} alt="slide1" className="slider__image" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={slide2} alt="slide2" className="slider__image" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src={slide3} alt="slide3" className="slider__image" />
-        </SwiperSlide>
+        {slides.map((slide) => (
+          <SwiperSlide>
+            <img src={slide} alt={slide} className="slider__image" />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <div className="slider__content">

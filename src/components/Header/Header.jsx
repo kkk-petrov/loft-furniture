@@ -4,6 +4,8 @@ import './Header.css';
 
 import logo from '../../assets/images/logo.svg';
 
+import * as icons from '../../icons.js';
+
 const Header = () => {
   return (
     <header className="header">
@@ -39,25 +41,27 @@ const Header = () => {
 
       <div className="header__container container">
         <div className="header__wrapper">
-          <img src={logo} alt="" className="header__logo" />
+          <a href="/">
+            <img src={logo} alt="Logo" className="header__logo" />
+          </a>
           <div className="header__search">
             <input placeholder="Поиск" type="text" className="header__search-input" />
           </div>
           <nav className="header__nav">
             <ul className="header__nav-list">
               <li className="header__nav-item">
-                <a href="wishlist">
-                  <div className="header__nav-icon wishlist"></div>
+                <a href="wishlist" className="header__nav-icon wishlist">
+                  {icons.wishlistIcon}
                 </a>
               </li>
               <li className="header__nav-item">
-                <a href="bag">
-                  <div className="header__nav-icon bag"></div>
+                <a href="bag" className="header__nav-icon bag">
+                  {icons.bagIcon}
                 </a>
               </li>
               <li className="header__nav-item">
-                <a href="profile">
-                  <div className="header__nav-icon profile"></div>
+                <a href="profile" className="header__nav-icon profile">
+                  {icons.profileIcon}
                 </a>
               </li>
             </ul>

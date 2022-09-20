@@ -23,7 +23,7 @@ const CategoryList = ({ items }) => {
               {category.dropdownItems
                 ? category.dropdownItems.map((item) => {
                     return (
-                      <li className="category__dropdown-item">
+                      <li key={item} className="category__dropdown-item">
                         <a href="qqq" className="category__dropdown-link">
                           {item}
                         </a>

@@ -49,7 +49,7 @@
 
 .swiper-button-next::after,
 .swiper-button-prev::after{
-    content: url('../../../assets/images/icons/next-btn.svg');
+    content: url('../../assets/images/icons/next-btn.svg');
     z-index: 10;
     transition: all .2s ease-in-out;
 }
@@ -64,7 +64,9 @@
     filter:brightness(30%);
 }
 
-
+.swiper-pagination-bullet{
+    background-color: #3C3C3C;
+}
 
 .slider__title{
     font-family: 'Playfair Display', serif;

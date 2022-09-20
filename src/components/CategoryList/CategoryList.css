@@ -126,6 +126,7 @@
 .category__dropdown-item:hover{
     background-color: #4b4b4b;
     cursor: pointer;
+
 }
 
 .category__dropdown-item:hover .category__dropdown-link{
@@ -137,6 +138,7 @@
     /* color: #245462; */
     color: #3a3a3a;
     text-decoration: none;
+    display: block;
 }
 
 .category__list-item:hover .category__dropdown{

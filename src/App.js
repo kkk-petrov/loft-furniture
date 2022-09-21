@@ -7,7 +7,6 @@ import ProductList from './components/ProductList/ProductList';
 import Footer from './components/Footer/Footer.jsx';
 
 import * as icons from './icons.js';
-import products from './assets/js/products.js';
 
 function App() {
   return (
@@ -47,7 +46,185 @@ function App() {
             items={[
               {
                 title: 'Стул',
-                image: products.CHAIRS.chair1,
+                image: 'chairs/chair1',
+                subtitle: 'Chair 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Стул',
+                image: 'chairs/chair2',
+                subtitle: 'Chair 2',
+                price: '120$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Диван',
+                image: 'sofas/sofa-yellow',
+                subtitle: 'Диван 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Диван',
+                image: 'sofas/sofa-blue',
+                subtitle: 'Диван 2',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Кровать',
+                image: 'beds/bed1',
+                subtitle: 'Кровать 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Шкаф',
+                image: 'lockers/locker1',
+                subtitle: 'Шкаф 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Шкаф',
+                image: 'lockers/locker2',
+                subtitle: 'Шкаф 2',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Тумбочка',
+                image: 'lockers/dresser1',
+                subtitle: 'Тумбочка 1',
+                price: '1$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Тумбочка',
+                image: 'lockers/dresser1',
+                subtitle: 'Тумбочка 2',
+                price: '10$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+              {
+                title: 'Буффет',
+                image: 'lockers/buffet1',
+                subtitle: 'Буффет 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Стол',
+                image: 'tables/table1',
+                subtitle: 'table 1',
+                price: '1100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Полка',
+                image: 'shelfs/shelf1',
+                subtitle: 'shelf 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Полка',
+                image: 'shelfs/shelf2',
+                subtitle: 'shelf 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Диван',
+                image: 'sofas/sofa-ltbrown',
+                subtitle: 'sofa 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Диван',
+                image: 'sofas/sofa-pink',
+                subtitle: 'sofa 1',
+                price: '100$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
+              },
+
+              {
+                title: 'Стол',
+                image: 'tables/table2',
+                subtitle: 'table 2',
+                price: '30$',
+                size: {
+                  x: 100,
+                  y: 200,
+                  z: 300,
+                },
               },
             ]}
           />

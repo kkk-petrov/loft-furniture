@@ -46,17 +46,6 @@ function App() {
             items={[
               {
                 title: 'Стул',
-                image: 'chairs/chair1',
-                subtitle: 'Chair 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-              {
-                title: 'Стул',
                 image: 'chairs/chair2',
                 subtitle: 'Chair 2',
                 price: '120$',
@@ -99,6 +88,10 @@ function App() {
                   z: 300,
                 },
               },
+            ]}
+          />
+          <ProductList
+            items={[
               {
                 title: 'Шкаф',
                 image: 'lockers/locker1',
@@ -134,92 +127,9 @@ function App() {
               },
               {
                 title: 'Тумбочка',
-                image: 'lockers/dresser1',
+                image: 'lockers/dresser2',
                 subtitle: 'Тумбочка 2',
                 price: '10$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-              {
-                title: 'Буффет',
-                image: 'lockers/buffet1',
-                subtitle: 'Буффет 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Стол',
-                image: 'tables/table1',
-                subtitle: 'table 1',
-                price: '1100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Полка',
-                image: 'shelfs/shelf1',
-                subtitle: 'shelf 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Полка',
-                image: 'shelfs/shelf2',
-                subtitle: 'shelf 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Диван',
-                image: 'sofas/sofa-ltbrown',
-                subtitle: 'sofa 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Диван',
-                image: 'sofas/sofa-pink',
-                subtitle: 'sofa 1',
-                price: '100$',
-                size: {
-                  x: 100,
-                  y: 200,
-                  z: 300,
-                },
-              },
-
-              {
-                title: 'Стол',
-                image: 'tables/table2',
-                subtitle: 'table 2',
-                price: '30$',
                 size: {
                   x: 100,
                   y: 200,
